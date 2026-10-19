@@ -2,3 +2,54 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+:root {
+  /* цвета (тёмная тема — основная) */
+  --page-color: #000028;
+  --text-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --heading-color: #ff0070;
+  --control-color: #ff0070;
+  --title-color: #db00ff;
+  --decor-text-color: #000028;
+  --cover-image: url('../images/cover-image-dark.png');
+
+  /* шрифты */
+  --font-family: 'IBM Plex mono', monospace;
+  --font-size: 1.125rem;
+  --line-height: 1.3;
+  --main-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+
+  /* размеры и отступы */
+  --page-padding: 10px;
+  --gap: 20px;
+  --gallery-gap: 10px;
+  --section-gap: 50px;
+  --content-padding-start: 40px;
+  --content-padding-end: 40px;
+  --screen-min-height: 668px;
+  --header-menu-offset: 64px;
+  --header-subtitle-offset: 55px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --main-title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --page-padding: 20px;
+    --gallery-gap: 20px;
+    --section-gap: 80px;
+    --content-padding-start: 60px;
+    --content-padding-end: 60px;
+    --screen-min-height: 1024px;
+    --header-menu-offset: 170px;
+    --header-subtitle-offset: 16vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --screen-min-height: 768px;
+    --header-menu-offset: 0;
+    --header-subtitle-offset: 15vh;
+  }
+}
