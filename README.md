@@ -17,6 +17,10 @@
 - `fonts/`, `images/` — шрифты и изображения;
 - `scripts/script.js` — переключение темы.
 
+## Репозиторий
+
+https://github.com/sxnders/slozhno-sosredotochitsya-ad
+
 ## Запуск
 
 Откройте `index.html` в браузере.
